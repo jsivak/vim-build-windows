@@ -16,7 +16,7 @@ set TOOLCHAIN=x86_amd64
 set FEATURES=HUGE
 
 :: yes for gvim, no for vim
-set GUI=yes
+set GUI=no
 set OLE=yes
 set DIRECTX=yes
 set IME=yes
