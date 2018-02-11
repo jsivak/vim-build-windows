@@ -1,7 +1,7 @@
 @echo off
 
 :: Windows SDK Include directory. No quotation marks.
-set SDK_INCLUDE_DIR=C:\Program Files\Microsoft SDKs\Windows\v7.1\Include
+:: set SDK_INCLUDE_DIR=C:\Program Files\Microsoft SDKs\Windows\v7.1\Include
 
 :: Visual Studio directory. Quotation marks.
 set VS_DIR="C:\Program Files (x86)\Microsoft Visual Studio 14.0"
