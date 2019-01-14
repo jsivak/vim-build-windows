@@ -1,11 +1,5 @@
 @echo off
 
-:: Windows SDK Include directory. No quotation marks.
-:: set SDK_INCLUDE_DIR=C:\Program Files\Microsoft SDKs\Windows\v7.1\Include
-
-:: Visual Studio directory. Quotation marks.
-set VS_DIR="C:\Program Files (x86)\Microsoft Visual Studio 14.0"
-
 :: Target architecture, AMD64 (64-bit) or I386 (32-bit)
 set CPU=AMD64
 :: set CPU=I386
@@ -31,31 +25,27 @@ set CHANNEL=yes
 set NETBEANS=yes
 set NBDEBUG=no
 
-set DYNAMIC_PERL=yes
-set PERL=C:\perl64
-set PERL_VER=524
+:: set DYNAMIC_PERL=yes
+:: set PERL=C:\perl64
+:: set PERL_VER=524
 
 :: Enable Python scripting
-set DYNAMIC_PYTHON=yes
-set PYTHON=C:\Python27
-set PYTHON_VER=27
+:: set DYNAMIC_PYTHON=yes
+:: set PYTHON=C:\Python27
+:: set PYTHON_VER=27
 
-set DYNAMIC_PYTHON3=yes
-set PYTHON3=C:\Program Files\Anaconda3
-set PYTHON3_VER=36
+:: set DYNAMIC_PYTHON3=yes
+:: set PYTHON3=C:\Program Files\Anaconda3
+:: set PYTHON3_VER=36
 
-set DYNAMIC_LUA=yes
-set LUA=C:\lua
-set PYTHON3_VER=36
+:: set DYNAMIC_LUA=no
+:: set LUA=C:\lua
 
-set DYNAMIC_TCL=yes
-set TCL=C:\Tcl
+:: set DYNAMIC_TCL=yes
+:: set TCL=C:\Tcl
 
-:set DYNAMIC_RUBY=no
-:set RUBY=C:\Ruby22-x64
-:set RUBY_MSVCRT_NAME=msvcrt
+::set DYNAMIC_RUBY=no
+::set RUBY=C:\Ruby22-x64
+::set RUBY_MSVCRT_NAME=msvcrt
 
 set WINVER=0x500
-
-echo "Configuring Visual Studio..."
-call %VS_DIR%\VC\vcvarsall.bat %TOOLCHAIN%
